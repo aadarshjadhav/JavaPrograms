@@ -25,6 +25,8 @@ public class inheritance extends A{
         a.i=10;
         a.k=90; //Doubt: Why a.k is not accessible? but in.k is?
         
+        in.k=100;
+        
         b.i=1;
         b.j=2; 
         
