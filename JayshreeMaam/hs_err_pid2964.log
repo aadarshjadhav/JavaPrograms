@@ -18,7 +18,7 @@
 #     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
 # This output file may be truncated or incomplete.
 #
-#  Out of Memory Error (os_windows.cpp:3530), pid=3688, tid=14992
+#  Out of Memory Error (os_windows.cpp:3530), pid=2964, tid=7764
 #
 # JRE version:  (18.0.2.1+1) (build )
 # Java VM: Java HotSpot(TM) 64-Bit Server VM (18.0.2.1+1-1, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
@@ -27,16 +27,16 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 --module-path=D:\ThinkQuotient\eclipse-workspace\gitworkspace\JayshreeMaam\bin -XX:+ShowCodeDetailsInExceptionMessages -Djdk.module.main=JayshreeMaam JayshreeMaam/com.arraydemos.MarksPercentage
+Command Line: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 --module-path=D:\ThinkQuotient\eclipse-workspace\gitworkspace\JayshreeMaam\bin -XX:+ShowCodeDetailsInExceptionMessages -Djdk.module.main=JayshreeMaam JayshreeMaam/com.arraydemos.StudentMaxPercentage
 
 Host: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3570)
-Time: Tue Oct 31 14:54:56 2023 India Standard Time elapsed time: 0.018045 seconds (0d 0h 0m 0s)
+Time: Mon Nov  6 00:21:35 2023 India Standard Time elapsed time: 0.019528 seconds (0d 0h 0m 0s)
 
 ---------------  T H R E A D  ---------------
 
-Current thread (0x0000026d19f5f740):  JavaThread "Unknown thread" [_thread_in_vm, id=14992, stack(0x0000009a37800000,0x0000009a37900000)]
+Current thread (0x000001dfbcda0830):  JavaThread "Unknown thread" [_thread_in_vm, id=7764, stack(0x00000013d1800000,0x00000013d1900000)]
 
-Stack: [0x0000009a37800000,0x0000009a37900000]
+Stack: [0x00000013d1800000,0x00000013d1900000]
 Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
 V  [jvm.dll+0x6993aa]
 V  [jvm.dll+0x7f46dd]
@@ -65,22 +65,22 @@ C  [ntdll.dll+0x526b1]
 ---------------  P R O C E S S  ---------------
 
 Threads class SMR info:
-_java_thread_list=0x00007ffc6149e550, length=0, elements={
+_java_thread_list=0x00007ffbdad8e550, length=0, elements={
 }
 
 Java Threads: ( => current thread )
 
 Other Threads:
-  0x0000026d19fbe040 WorkerThread "GC Thread#0" [stack: 0x0000009a37900000,0x0000009a37a00000] [id=7204]
-  0x0000026d19fcfa90 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000009a37a00000,0x0000009a37b00000] [id=13716]
-  0x0000026d19fd0b30 WorkerThread "G1 Conc#0" [stack: 0x0000009a37b00000,0x0000009a37c00000] [id=15884]
+  0x000001dfbce001b0 WorkerThread "GC Thread#0" [stack: 0x00000013d1900000,0x00000013d1a00000] [id=4828]
+  0x000001dfbce11d00 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000013d1a00000,0x00000013d1b00000] [id=3456]
+  0x000001dfbce12e90 WorkerThread "G1 Conc#0" [stack: 0x00000013d1b00000,0x00000013d1c00000] [id=13528]
 
-[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc60cca877]
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffbda5ba877]
 
 VM state: not at safepoint (not fully initialized)
 
 VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
-[0x0000026d19f5c2c0] Heap_lock - owner thread: 0x0000026d19f5f740
+[0x000001dfbcd9cda0] Heap_lock - owner thread: 0x000001dfbcda0830
 
 Heap address: 0x0000000082000000, size: 2016 MB, Compressed Oops mode: 32-bit
 
@@ -95,7 +95,7 @@ Heap:
  garbage-first heap   total 0K, used 0K [0x0000000082000000, 0x0000000100000000)
   region size 1024K, 0 young (0K), 0 survivors (0K)
 
-[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc610b1839]
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffbda9a1839]
 
 GC Heap History (0 events):
 No events
@@ -123,45 +123,45 @@ Event: 0.013 Loaded shared library C:\Program Files\Java\jdk-18.0.2.1\bin\java.d
 
 
 Dynamic libraries:
-0x00007ff6bb4c0000 - 0x00007ff6bb4d0000 	C:\Program Files\Java\jdk-18.0.2.1\bin\javaw.exe
-0x00007ffca0810000 - 0x00007ffca0a07000 	C:\WINDOWS\SYSTEM32\ntdll.dll
-0x00007ffc9e970000 - 0x00007ffc9ea2d000 	C:\WINDOWS\System32\KERNEL32.DLL
-0x00007ffc9df50000 - 0x00007ffc9e246000 	C:\WINDOWS\System32\KERNELBASE.dll
-0x00007ffc9e450000 - 0x00007ffc9e550000 	C:\WINDOWS\System32\ucrtbase.dll
-0x00007ffc6ff40000 - 0x00007ffc6ff5a000 	C:\Program Files\Java\jdk-18.0.2.1\bin\VCRUNTIME140.dll
-0x00007ffc6fa80000 - 0x00007ffc6fa98000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jli.dll
-0x00007ffca0190000 - 0x00007ffca023e000 	C:\WINDOWS\System32\ADVAPI32.dll
-0x00007ffc9e8d0000 - 0x00007ffc9e96e000 	C:\WINDOWS\System32\msvcrt.dll
-0x00007ffc9f000000 - 0x00007ffc9f09c000 	C:\WINDOWS\System32\sechost.dll
-0x00007ffc9f2d0000 - 0x00007ffc9f3f6000 	C:\WINDOWS\System32\RPCRT4.dll
-0x00007ffca0570000 - 0x00007ffca070e000 	C:\WINDOWS\System32\USER32.dll
-0x00007ffc9e420000 - 0x00007ffc9e442000 	C:\WINDOWS\System32\win32u.dll
-0x00007ffca0160000 - 0x00007ffca018c000 	C:\WINDOWS\System32\GDI32.dll
-0x00007ffc80380000 - 0x00007ffc8061a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_60bb2a3971f3e41a\COMCTL32.dll
-0x00007ffc9e250000 - 0x00007ffc9e36a000 	C:\WINDOWS\System32\gdi32full.dll
-0x00007ffc9e660000 - 0x00007ffc9e6fd000 	C:\WINDOWS\System32\msvcp_win.dll
-0x00007ffc93a90000 - 0x00007ffc93a9a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
-0x00007ffc9eb60000 - 0x00007ffc9eb90000 	C:\WINDOWS\System32\IMM32.DLL
-0x00007ffc79440000 - 0x00007ffc7944c000 	C:\Program Files\Java\jdk-18.0.2.1\bin\vcruntime140_1.dll
-0x00007ffc5b750000 - 0x00007ffc5b7dd000 	C:\Program Files\Java\jdk-18.0.2.1\bin\msvcp140.dll
-0x00007ffc609c0000 - 0x00007ffc615d1000 	C:\Program Files\Java\jdk-18.0.2.1\bin\server\jvm.dll
-0x00007ffca07a0000 - 0x00007ffca07a8000 	C:\WINDOWS\System32\PSAPI.DLL
-0x00007ffc89340000 - 0x00007ffc89367000 	C:\WINDOWS\SYSTEM32\WINMM.dll
-0x00007ffc7fa90000 - 0x00007ffc7fa99000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
-0x00007ffc9ff10000 - 0x00007ffc9ff7b000 	C:\WINDOWS\System32\WS2_32.dll
-0x00007ffc9c790000 - 0x00007ffc9c7a2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
-0x00007ffc93ca0000 - 0x00007ffc93caa000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jimage.dll
-0x00007ffc9c450000 - 0x00007ffc9c634000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
-0x00007ffc8a9c0000 - 0x00007ffc8a9f4000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
-0x00007ffc9e5d0000 - 0x00007ffc9e652000 	C:\WINDOWS\System32\bcryptPrimitives.dll
-0x00007ffc6cf10000 - 0x00007ffc6cf35000 	C:\Program Files\Java\jdk-18.0.2.1\bin\java.dll
+0x00007ff604920000 - 0x00007ff604930000 	C:\Program Files\Java\jdk-18.0.2.1\bin\javaw.exe
+0x00007ffc295f0000 - 0x00007ffc297e7000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc29210000 - 0x00007ffc292cd000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc27150000 - 0x00007ffc27446000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc27560000 - 0x00007ffc27660000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc056f0000 - 0x00007ffc0570a000 	C:\Program Files\Java\jdk-18.0.2.1\bin\VCRUNTIME140.dll
+0x00007ffc07f90000 - 0x00007ffc07fa8000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jli.dll
+0x00007ffc27cb0000 - 0x00007ffc27d5e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc27950000 - 0x00007ffc279ee000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc277a0000 - 0x00007ffc2783c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc27a50000 - 0x00007ffc27b76000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc28f70000 - 0x00007ffc2910e000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc27710000 - 0x00007ffc27732000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc27920000 - 0x00007ffc2794c000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc26ed0000 - 0x00007ffc26fea000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc09da0000 - 0x00007ffc0a03a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_60bb2a3971f3e41a\COMCTL32.dll
+0x00007ffc26dc0000 - 0x00007ffc26e5d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc1d2e0000 - 0x00007ffc1d2ea000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc28da0000 - 0x00007ffc28dd0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffc20500000 - 0x00007ffc2050c000 	C:\Program Files\Java\jdk-18.0.2.1\bin\vcruntime140_1.dll
+0x00007ffc05230000 - 0x00007ffc052bd000 	C:\Program Files\Java\jdk-18.0.2.1\bin\msvcp140.dll
+0x00007ffbda2b0000 - 0x00007ffbdaec1000 	C:\Program Files\Java\jdk-18.0.2.1\bin\server\jvm.dll
+0x00007ffc29180000 - 0x00007ffc29188000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffc0a4e0000 - 0x00007ffc0a4e9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc103f0000 - 0x00007ffc10417000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc29110000 - 0x00007ffc2917b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc255e0000 - 0x00007ffc255f2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc21e60000 - 0x00007ffc21e6a000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jimage.dll
+0x00007ffc252c0000 - 0x00007ffc254a4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffc148f0000 - 0x00007ffc14924000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffc274a0000 - 0x00007ffc27522000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc21e10000 - 0x00007ffc21e35000 	C:\Program Files\Java\jdk-18.0.2.1\bin\java.dll
 
 dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
 symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_60bb2a3971f3e41a;C:\Program Files\Java\jdk-18.0.2.1\bin\server
 
 VM Arguments:
 jvm_args: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 --module-path=D:\ThinkQuotient\eclipse-workspace\gitworkspace\JayshreeMaam\bin -XX:+ShowCodeDetailsInExceptionMessages -Djdk.module.main=JayshreeMaam 
-java_command: JayshreeMaam/com.arraydemos.MarksPercentage
+java_command: JayshreeMaam/com.arraydemos.StudentMaxPercentage
 java_class_path (initial): <not set>
 Launcher Type: SUN_STANDARD
 
@@ -206,13 +206,13 @@ PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
 
 OS:
  Windows 10 , 64 bit Build 19041 (10.0.19041.3570)
-OS uptime: 0 days 5:12 hours
+OS uptime: 0 days 13:37 hours
 Hyper-V role detected
 
 CPU: total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 158 stepping 9 microcode 0xea, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt, hv
 
-Memory: 4k page, system-wide physical 8058M (1694M free)
-TotalPageFile size 10558M (AvailPageFile size 18M)
+Memory: 4k page, system-wide physical 8058M (1991M free)
+TotalPageFile size 10558M (AvailPageFile size 23M)
 current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
 current process commit charge ("private bytes"): 52M, peak: 177M
 
