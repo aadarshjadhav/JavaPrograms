@@ -8,12 +8,8 @@ public class StudentArrayList {
 	public static void main (String args[])
 	{
 		ArrayList<Student> list= new ArrayList<>();
-		list.add(new Student(1,"Pankaj"));
-		list.add(new Student(5,"Utkarsha"));
-		list.add(new Student(8,"Snehal"));
-		list.add(new Student(2,"Ishawar"));
-		list.add(new Student(9,"Yogesh"));
-		list.add(new Student(11,"Sudarshan"));
+
+
 		list.add(new Student(12,"Jayshree"));
 		list.add(new Student(4,"Medha"));
 		list.add(new Student(3,"Adarsh"));

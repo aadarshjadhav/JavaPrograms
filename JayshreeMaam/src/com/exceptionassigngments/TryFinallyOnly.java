@@ -6,7 +6,9 @@ public class TryFinallyOnly {
 	{
 		try
 		{
+			System.out.println("Before excepption");
 			b=b/0;
+			System.out.println("After exception");
 		}
 		finally
 		{

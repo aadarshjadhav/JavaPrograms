@@ -18,7 +18,7 @@
 #     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
 # This output file may be truncated or incomplete.
 #
-#  Out of Memory Error (os_windows.cpp:3530), pid=14312, tid=16112
+#  Out of Memory Error (os_windows.cpp:3530), pid=13004, tid=140
 #
 # JRE version:  (18.0.2.1+1) (build )
 # Java VM: Java HotSpot(TM) 64-Bit Server VM (18.0.2.1+1-1, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
@@ -27,16 +27,16 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 --module-path=D:\ThinkQuotient\eclipse-workspace\gitworkspace\JayshreeMaam\bin -XX:+ShowCodeDetailsInExceptionMessages -Djdk.module.main=JayshreeMaam JayshreeMaam/diwalitest2.Bank
+Command Line: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 --module-path=D:\ThinkQuotient\eclipse-workspace\gitworkspace\JayshreeMaam\bin -XX:+ShowCodeDetailsInExceptionMessages -Djdk.module.main=JayshreeMaam JayshreeMaam/com.arraylistdemos.EmployeeArrayList
 
-Host: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3570)
-Time: Wed Nov 15 16:31:39 2023 India Standard Time elapsed time: 0.016513 seconds (0d 0h 0m 0s)
+Host: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Fri Nov 24 18:48:30 2023 India Standard Time elapsed time: 0.020911 seconds (0d 0h 0m 0s)
 
 ---------------  T H R E A D  ---------------
 
-Current thread (0x0000023712a2efa0):  JavaThread "Unknown thread" [_thread_in_vm, id=16112, stack(0x000000da13700000,0x000000da13800000)]
+Current thread (0x0000025e0ab4ef70):  JavaThread "Unknown thread" [_thread_in_vm, id=140, stack(0x000000c54c700000,0x000000c54c800000)]
 
-Stack: [0x000000da13700000,0x000000da13800000]
+Stack: [0x000000c54c700000,0x000000c54c800000]
 Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
 V  [jvm.dll+0x6993aa]
 V  [jvm.dll+0x7f46dd]
@@ -65,22 +65,22 @@ C  [ntdll.dll+0x526b1]
 ---------------  P R O C E S S  ---------------
 
 Threads class SMR info:
-_java_thread_list=0x00007fff27d7e550, length=0, elements={
+_java_thread_list=0x00007ff83d3ee550, length=0, elements={
 }
 
 Java Threads: ( => current thread )
 
 Other Threads:
-  0x0000023712a8eac0 WorkerThread "GC Thread#0" [stack: 0x000000da13800000,0x000000da13900000] [id=3804]
-  0x0000023712aa1cc0 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000da13900000,0x000000da13a00000] [id=7148]
-  0x0000023712aa25c0 WorkerThread "G1 Conc#0" [stack: 0x000000da13a00000,0x000000da13b00000] [id=1076]
+  0x0000025e0abac5e0 WorkerThread "GC Thread#0" [stack: 0x000000c54c800000,0x000000c54c900000] [id=3316]
+  0x0000025e0abbe8c0 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000c54c900000,0x000000c54ca00000] [id=7204]
+  0x0000025e0abc02c0 WorkerThread "G1 Conc#0" [stack: 0x000000c54ca00000,0x000000c54cb00000] [id=8096]
 
-[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff275aa877]
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff83cc1a877]
 
 VM state: not at safepoint (not fully initialized)
 
 VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
-[0x0000023712a2b0c0] Heap_lock - owner thread: 0x0000023712a2efa0
+[0x0000025e0ab4d1a0] Heap_lock - owner thread: 0x0000025e0ab4ef70
 
 Heap address: 0x0000000082000000, size: 2016 MB, Compressed Oops mode: 32-bit
 
@@ -95,7 +95,7 @@ Heap:
  garbage-first heap   total 0K, used 0K [0x0000000082000000, 0x0000000100000000)
   region size 1024K, 0 young (0K), 0 survivors (0K)
 
-[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff27991839]
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff83d001839]
 
 GC Heap History (0 events):
 No events
@@ -119,49 +119,49 @@ VM Operations (0 events):
 No events
 
 Events (1 events):
-Event: 0.011 Loaded shared library C:\Program Files\Java\jdk-18.0.2.1\bin\java.dll
+Event: 0.015 Loaded shared library C:\Program Files\Java\jdk-18.0.2.1\bin\java.dll
 
 
 Dynamic libraries:
-0x00007ff73f830000 - 0x00007ff73f840000 	C:\Program Files\Java\jdk-18.0.2.1\bin\javaw.exe
-0x00007fff7dd90000 - 0x00007fff7df87000 	C:\WINDOWS\SYSTEM32\ntdll.dll
-0x00007fff7bf10000 - 0x00007fff7bfcd000 	C:\WINDOWS\System32\KERNEL32.DLL
-0x00007fff7ba80000 - 0x00007fff7bd76000 	C:\WINDOWS\System32\KERNELBASE.dll
-0x00007fff7b870000 - 0x00007fff7b970000 	C:\WINDOWS\System32\ucrtbase.dll
-0x00007fff73650000 - 0x00007fff7366a000 	C:\Program Files\Java\jdk-18.0.2.1\bin\VCRUNTIME140.dll
-0x00007fff72640000 - 0x00007fff72658000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jli.dll
-0x00007fff7cb80000 - 0x00007fff7cc2e000 	C:\WINDOWS\System32\ADVAPI32.dll
-0x00007fff7d950000 - 0x00007fff7d9ee000 	C:\WINDOWS\System32\msvcrt.dll
-0x00007fff7d2e0000 - 0x00007fff7d37c000 	C:\WINDOWS\System32\sechost.dll
-0x00007fff7d670000 - 0x00007fff7d796000 	C:\WINDOWS\System32\RPCRT4.dll
-0x00007fff7d400000 - 0x00007fff7d59e000 	C:\WINDOWS\System32\USER32.dll
-0x00007fff7ba50000 - 0x00007fff7ba72000 	C:\WINDOWS\System32\win32u.dll
-0x00007fff7ce20000 - 0x00007fff7ce4c000 	C:\WINDOWS\System32\GDI32.dll
-0x00007fff7b5d0000 - 0x00007fff7b6ea000 	C:\WINDOWS\System32\gdi32full.dll
-0x00007fff7b780000 - 0x00007fff7b81d000 	C:\WINDOWS\System32\msvcp_win.dll
-0x00007fff5f7f0000 - 0x00007fff5fa8a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_60bb2a3971f3e41a\COMCTL32.dll
-0x00007fff733a0000 - 0x00007fff733aa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
-0x00007fff7bee0000 - 0x00007fff7bf10000 	C:\WINDOWS\System32\IMM32.DLL
-0x00007fff78330000 - 0x00007fff7833c000 	C:\Program Files\Java\jdk-18.0.2.1\bin\vcruntime140_1.dll
-0x00007fff5bdb0000 - 0x00007fff5be3d000 	C:\Program Files\Java\jdk-18.0.2.1\bin\msvcp140.dll
-0x00007fff272a0000 - 0x00007fff27eb1000 	C:\Program Files\Java\jdk-18.0.2.1\bin\server\jvm.dll
-0x00007fff7d660000 - 0x00007fff7d668000 	C:\WINDOWS\System32\PSAPI.DLL
-0x00007fff64340000 - 0x00007fff64367000 	C:\WINDOWS\SYSTEM32\WINMM.dll
-0x00007fff5cd80000 - 0x00007fff5cd89000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
-0x00007fff7c850000 - 0x00007fff7c8bb000 	C:\WINDOWS\System32\WS2_32.dll
-0x00007fff79d80000 - 0x00007fff79d92000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
-0x00007fff57fc0000 - 0x00007fff57fca000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jimage.dll
-0x00007fff79a60000 - 0x00007fff79c44000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
-0x00007fff66d90000 - 0x00007fff66dc4000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
-0x00007fff7b6f0000 - 0x00007fff7b772000 	C:\WINDOWS\System32\bcryptPrimitives.dll
-0x00007fff4f740000 - 0x00007fff4f765000 	C:\Program Files\Java\jdk-18.0.2.1\bin\java.dll
+0x00007ff642fd0000 - 0x00007ff642fe0000 	C:\Program Files\Java\jdk-18.0.2.1\bin\javaw.exe
+0x00007ff898630000 - 0x00007ff898828000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff896d40000 - 0x00007ff896dfd000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff8961c0000 - 0x00007ff8964b6000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff895de0000 - 0x00007ff895ee0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff88fb80000 - 0x00007ff88fb98000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jli.dll
+0x00007ff8966f0000 - 0x00007ff89679f000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff8968b0000 - 0x00007ff89694e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff897ab0000 - 0x00007ff897b4c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8983c0000 - 0x00007ff8984e6000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff88d480000 - 0x00007ff88d49a000 	C:\Program Files\Java\jdk-18.0.2.1\bin\VCRUNTIME140.dll
+0x00007ff8981c0000 - 0x00007ff89835e000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff896560000 - 0x00007ff896582000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff8985c0000 - 0x00007ff8985ec000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff895fc0000 - 0x00007ff8960da000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff8964c0000 - 0x00007ff89655d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff877360000 - 0x00007ff8775fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\COMCTL32.dll
+0x00007ff88baf0000 - 0x00007ff88bafa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff897160000 - 0x00007ff897190000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff890f30000 - 0x00007ff890f3c000 	C:\Program Files\Java\jdk-18.0.2.1\bin\vcruntime140_1.dll
+0x00007ff858d30000 - 0x00007ff858dbd000 	C:\Program Files\Java\jdk-18.0.2.1\bin\msvcp140.dll
+0x00007ff83c910000 - 0x00007ff83d521000 	C:\Program Files\Java\jdk-18.0.2.1\bin\server\jvm.dll
+0x00007ff897aa0000 - 0x00007ff897aa8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff879950000 - 0x00007ff879959000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff896c20000 - 0x00007ff896c8b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff882a30000 - 0x00007ff882a57000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff8945d0000 - 0x00007ff8945e2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff892cd0000 - 0x00007ff892cda000 	C:\Program Files\Java\jdk-18.0.2.1\bin\jimage.dll
+0x00007ff893ae0000 - 0x00007ff893cc4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff881a30000 - 0x00007ff881a64000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff896130000 - 0x00007ff8961b2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff890eb0000 - 0x00007ff890ed5000 	C:\Program Files\Java\jdk-18.0.2.1\bin\java.dll
 
 dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
-symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_60bb2a3971f3e41a;C:\Program Files\Java\jdk-18.0.2.1\bin\server
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5;C:\Program Files\Java\jdk-18.0.2.1\bin\server
 
 VM Arguments:
 jvm_args: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 --module-path=D:\ThinkQuotient\eclipse-workspace\gitworkspace\JayshreeMaam\bin -XX:+ShowCodeDetailsInExceptionMessages -Djdk.module.main=JayshreeMaam 
-java_command: JayshreeMaam/diwalitest2.Bank
+java_command: JayshreeMaam/com.arraylistdemos.EmployeeArrayList
 java_class_path (initial): <not set>
 Launcher Type: SUN_STANDARD
 
@@ -205,14 +205,14 @@ PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
 ---------------  S Y S T E M  ---------------
 
 OS:
- Windows 10 , 64 bit Build 19041 (10.0.19041.3570)
-OS uptime: 0 days 5:45 hours
+ Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+OS uptime: 0 days 8:57 hours
 Hyper-V role detected
 
 CPU: total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 158 stepping 9 microcode 0xea, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt, hv
 
-Memory: 4k page, system-wide physical 8058M (1530M free)
-TotalPageFile size 10548M (AvailPageFile size 68M)
+Memory: 4k page, system-wide physical 8058M (1675M free)
+TotalPageFile size 10558M (AvailPageFile size 88M)
 current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
 current process commit charge ("private bytes"): 52M, peak: 177M
 
