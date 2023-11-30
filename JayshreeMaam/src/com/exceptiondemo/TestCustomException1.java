@@ -2,12 +2,12 @@ package com.exceptiondemo;
 
 public class TestCustomException1 {
 	
-	static void validate(int age)throws InvalidAgeException
+	static void validate(int age) throws InvalidAgeException
 	{  
      if(age<18)  
      {
     	 throw new InvalidAgeException("not valid"); 
-    	 System.out.println("Inside If");
+    //	 System.out.println("Inside If"); //This statement shows Unreacheble code
      }
      
      else  

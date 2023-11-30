@@ -10,7 +10,7 @@ public class FindMaxDigit {
 		while(num>0)
 		{
 			remainder=num%10;
-			if(largest<remainder)
+			if(remainder>largest)
 			{
 				largest=remainder;
 			}
