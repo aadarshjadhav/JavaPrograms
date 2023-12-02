@@ -218,7 +218,7 @@ public class DepartmentHashMap {
 		}
 	
 		System.out.println(dep_hashmap.get(new Department(1002,"QA","Delhi")));
-		System.out.println(dep_hashmap.get(new Department(1002,"QA","Delhi")));
+	//	System.out.println(dep_hashmap.get(new Department(1002,"QA","Delhi")));
 	}
 
 }
