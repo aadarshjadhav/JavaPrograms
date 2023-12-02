@@ -23,6 +23,7 @@ public class EmployeeArrayList {
 
 		//Iterator<Employee> itr;
 		Collections.sort(emp_list); //compareTo () from Employee
+		
 		Iterator<Employee> itr= emp_list.iterator();
 		while(itr.hasNext())
 		{

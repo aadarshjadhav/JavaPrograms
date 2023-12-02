@@ -55,7 +55,21 @@ public class Department {
 		return "Department [dep_id=" + dep_id + ", dep_name=" + dep_name + ", location=" + location + "]";
 	}
 	
-	
-	
+//	@Override
+//	public int hashCode()
+//	{
+//		return dep_id;
+//	}
+//	
+//	@Override
+//	public boolean equals(Object obj)
+//	{
+//		Department d= (Department) obj;
+//		if(this.dep_id==d.dep_id && this.dep_name==d.dep_name && this.location==d.location)
+//			return true;
+//		else
+//			return false;
+//	}
+//	
 
 }

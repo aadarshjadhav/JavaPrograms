@@ -1,4 +1,4 @@
-package com.maphashmap;
+package com.hashmapassignments;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import com.hashmapassignments.Student;
 import com.maphashmap.Employee;
 import java.util.Set;
 import java.util.Map.Entry;
@@ -65,7 +64,7 @@ public class DepartmentHashMap {
 		{
 			Entry<Department,ArrayList<Employee>> element= itr.next();
 			Department dep_obj=element.getKey();
-			System.out.println(dep_obj.deptid+ " "+ dep_obj.getDeptname());
+			System.out.println(dep_obj.dep_id+ " "+ dep_obj.getDep_name());
 			ArrayList<Employee> array_list_element=element.getValue();
 			Iterator<Employee> list_itr=array_list_element.iterator();
 			while(list_itr.hasNext())
@@ -117,7 +116,7 @@ public class DepartmentHashMap {
 		{
 			Entry<Department,ArrayList<Employee>> element= itr2.next();  //Note:Mind the itr2.next();
 			Department dep_obj_2=element.getKey();
-			System.out.println(dep_obj_2.deptid+ " "+ dep_obj_2.getDeptname());
+			System.out.println(dep_obj_2.dep_id+ " "+ dep_obj_2.getDep_name());
 			ArrayList<Employee> array_list_element_2=element.getValue();
 			Iterator<Employee> list_itr_2=array_list_element_2.iterator();
 			
@@ -144,7 +143,7 @@ public class DepartmentHashMap {
 		{
 			Entry<Department,ArrayList<Employee>> element=set_itr3.next();
 			Department dep_obj=element.getKey();
-			if(dep_obj.getDeptname().equals("IT"))
+			if(dep_obj.getDep_name().equals("IT"))
 			{
 				ArrayList<Employee> array_list_element=element.getValue();
 				Iterator<Employee> list_itr_3=array_list_element.iterator();
@@ -183,6 +182,8 @@ public class DepartmentHashMap {
 		}
 		
 		//Display the Department which has maximum number of employees
+		
+		//4>Add the new employee in Testing department
 		System.out.println();
 		System.out.println("_____________________Add New Employee QA Department_________________________");
 		
@@ -193,7 +194,7 @@ public class DepartmentHashMap {
 			Entry<Department,ArrayList<Employee>> element=set_itr5.next();
 			Department dep_obj=element.getKey();
 			
-			if(dep_obj.getDeptname().equals("QA"))
+			if(dep_obj.getDep_name().equals("QA"))
 			{
 				ArrayList<Employee> array_list_element=element.getValue();
 				array_list_element.add(new Employee(10,"Prathik", 77000,1002));
@@ -207,7 +208,7 @@ public class DepartmentHashMap {
 		{
 			Entry<Department,ArrayList<Employee>> element= itr6.next();
 			Department dep_obj=element.getKey();
-			System.out.println(dep_obj.deptid+ " "+ dep_obj.getDeptname());
+			System.out.println(dep_obj.dep_id+ " "+ dep_obj.getDep_name());
 			ArrayList<Employee> array_list_element=element.getValue();
 			Iterator<Employee> list_itr=array_list_element.iterator();
 			while(list_itr.hasNext())
@@ -215,17 +216,8 @@ public class DepartmentHashMap {
 				System.out.println(list_itr.next());
 			}
 		}
-		
-		
-		
+	
 		System.out.println(dep_hashmap.get(new Department(1002,"QA","Delhi")));
-		
-		
-		//4>Add the new employee in Testing department
-			
-		
-		
-		
 		
 	}
 
