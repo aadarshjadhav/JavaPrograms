@@ -1,4 +1,4 @@
-package com.maphashmap;
+package com.hashmapdemo;
 
 public class Employee {
 	

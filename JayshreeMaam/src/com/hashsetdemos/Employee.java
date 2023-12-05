@@ -1,6 +1,6 @@
 package com.hashsetdemos;
 
-import com.maphashmap.Department;
+import com.hashmapdemo.Department;
 
 public class Employee {
 	

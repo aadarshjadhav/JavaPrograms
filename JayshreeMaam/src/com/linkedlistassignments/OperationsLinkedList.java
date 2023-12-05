@@ -111,8 +111,12 @@ public class OperationsLinkedList {
 //			for(String s:list)
 //				System.out.println(s);
 //		13.  WAP to remove first and last element from a linked list.
+		
+		list.removeFirst();
+		list.removeLast();
+		
 //		14.  WAP to remove all the elements from a linked list.
-	
+		list.clear();
 		
 		
 	}

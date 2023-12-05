@@ -7,11 +7,9 @@ import java.util.Set;
 import java.util.ArrayList;
 
 /*
- * WAP to create a ArrayList Student which contain rollno,name,arrayList marks,percentage ,
- * grade.
-From 
-Above arrayList of student , create a Map which having key as a grade and value is ArrayList<Student> 
- * */
+ * WAP to create a ArrayList Student which contain rollno,name,arrayList marks,percentage ,grade.
+	From Above arrayList of student , create a Map which having key as a grade and value is ArrayList<Student> 
+* */
 
 
 public class Student1HashArrayList {

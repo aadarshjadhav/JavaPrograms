@@ -33,6 +33,8 @@ public class LinkedHashMapBook {
 //		int maximum=list_values.get(list_values.size()-1);
 //		System.out.println("maximum:"+maximum);
 		
+		System.out.println();
+		System.out.println("___________Book which has minimum copies________");
 		Set<Entry<Book,Integer>> set2= linked_hash_map.entrySet();
 		Iterator<Entry<Book,Integer>> itr2=set2.iterator();
 		Book obj=null;
@@ -48,7 +50,27 @@ public class LinkedHashMapBook {
 				
 			}
 		}
-		System.out.println("Minimum:"+minimum+obj);
+		System.out.println("Minimum:"+minimum+" :"+obj);
+		
+		System.out.println();
+		System.out.println("___________Book which has maximum copies________");
+		Set<Entry<Book,Integer>> set3= linked_hash_map.entrySet();
+		Iterator<Entry<Book,Integer>> itr3=set3.iterator();
+		Book obj2=null;
+		int maximum=0;
+		while(itr3.hasNext())
+		{
+			Entry<Book,Integer> element=itr3.next();
+			int val=element.getValue();
+			obj=element.getKey();
+			if(val>maximum)
+			{
+				maximum=val;
+				obj=element.getKey();
+				
+			}
+		}
+		System.out.println("Mmaximum:"+maximum+" :"+obj);
 		
 	}
 

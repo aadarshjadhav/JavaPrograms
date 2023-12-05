@@ -7,9 +7,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import com.maphashmap.Employee;
+import com.hashmapdemo.Employee;
+
 import java.util.Set;
 import java.util.Map.Entry;
+//WAP to create a map which stores an arraylist as a value
 
 public class DepartmentHashMap {
 	
@@ -181,7 +183,6 @@ public class DepartmentHashMap {
 			
 		}
 		
-		//Display the Department which has maximum number of employees
 		
 		//4>Add the new employee in Testing department
 		System.out.println();
@@ -219,6 +220,92 @@ public class DepartmentHashMap {
 	
 		System.out.println(dep_hashmap.get(new Department(1002,"QA","Delhi")));
 	////	System.out.println(dep_hashmap.get(new Department(1002,"QA","Delhi")));
+		
+		
+		//13.WAP to iterate the elements in the arraylist stored in the above Map.()
+		System.out.println();
+		System.out.println("_____________Iterate the elements in the ArrayLsist stored in the above Map________");
+		Set<Entry<Department, ArrayList<Employee>>> set_entries=dep_hashmap.entrySet();
+		Iterator<Entry<Department, ArrayList<Employee>>> set_itr=set_entries.iterator();
+		while(set_itr.hasNext())
+		{
+			Entry<Department, ArrayList<Employee>> entry=set_itr.next();
+			ArrayList<Employee> array_list=entry.getValue();
+			Iterator<Employee> itr_array_list=array_list.iterator();
+			System.out.println();
+			
+			System.out.println("Iterating through arraylist of:"+entry.getKey());
+			System.out.println();
+			while(itr_array_list.hasNext())
+				System.out.println(itr_array_list.next());
+		}
+		
+		//5>Give department details in which maximum number of Employees working.
+		System.out.println();
+		System.out.println("_____________Department details in which maximum number of Employees________");
+		
+		Set<Entry<Department, ArrayList<Employee>>> entries_dep=dep_hashmap.entrySet();
+		Iterator<Entry<Department, ArrayList<Employee>>> itr_dep_entries=entries_dep.iterator();
+		int max_employee_numbers=0;
+		Department dep_max=null;
+		while(itr_dep_entries.hasNext())
+		{
+			Entry<Department, ArrayList<Employee>> entry_dep=itr_dep_entries.next();
+			Department dep_obj=entry_dep.getKey();
+			ArrayList<Employee> array_list_employee=entry_dep.getValue();
+			int count=array_list_employee.size();
+//			int count=0;
+//			Iterator<Employee> itr_array_list=array_list_employee.iterator();
+//			while(itr_array_list.hasNext())
+//			{
+//				itr_array_list.next();
+//				count++;
+//			}
+//			if(count>max_employee_numbers)
+//			{
+//				max_employee_numbers=count;
+//				dep_max=dep_obj;
+//			}
+//			
+//			System.out.println("Department:"+obj+ " has:"+ count);
+			
+			
+			if(count>max_employee_numbers)
+			{
+				max_employee_numbers=count;
+				dep_max=dep_obj;
+			}
+		}
+		
+		System.out.println("Department with max number of employees:"+dep_max.getDep_name()+" ="+max_employee_numbers);
+		
+		
+		//6>Find employees whose name start with 'A'
+		System.out.println();
+		System.out.println("_____________Find employees whose name start with 'A'________");
+		Set<Entry<Department, ArrayList<Employee>>> set_entries_2=dep_hashmap.entrySet();
+		Iterator<Entry<Department, ArrayList<Employee>>> set_itr_2=set_entries_2.iterator();
+		while(set_itr_2.hasNext())
+		{
+			Entry<Department, ArrayList<Employee>> entry=set_itr_2.next();
+			ArrayList<Employee> array_list=entry.getValue();
+			Iterator<Employee> itr_array_list=array_list.iterator();
+			//System.out.println();
+			
+			//System.out.println("Iterating through arraylist of:"+entry.getKey());
+			//System.out.println();
+			while(itr_array_list.hasNext())
+			{
+				Employee emp_obj=itr_array_list.next();
+				char letters[]=emp_obj.getEname().toCharArray();
+				
+				if(letters[0]=='A')
+				{
+					System.out.println(emp_obj);
+				}
+			}
+		}
+		
 	}
 
 }
