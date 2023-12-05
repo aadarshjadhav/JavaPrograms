@@ -1,5 +1,13 @@
 package com.hashmapassignments;
 
+//WAP Phone Directory application in java using a Map.
+//The phone directory should allow users to:
+//
+//Add a contact with a name and phone number.
+//Remove a contact by name.
+//Retrieve the phone number associated with a given name.
+//Display the entire phone directory.
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

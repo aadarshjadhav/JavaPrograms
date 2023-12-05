@@ -81,7 +81,14 @@ public class EmployeeArrayList {
 		empnamej.findEmpNameStart(emp_list, "J");
 		
 		
+		System.out.println("_________________________________________________________");
+		System.out.println("Employee living in Delhi__Without creating nenw class:");
+		//Doubt(Solved): we can do this with a new class and by writing a function in it. Or even without a new class,
+		//Like i did it below here.
+		//Solved: By using different class and method, previous way, done with location "Pune"
 		
+	
+	
 	}
 
 }

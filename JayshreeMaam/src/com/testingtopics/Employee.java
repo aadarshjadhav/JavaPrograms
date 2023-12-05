@@ -1,4 +1,4 @@
-package com.arraylistdemos;
+package com.testingtopics;
 
 public class Employee implements Comparable<Employee> {
 	
@@ -89,7 +89,7 @@ public class Employee implements Comparable<Employee> {
 		return dep;
 	}
 
-	public void setDep_array(Department dep) 
+	public void setDepartment(Department dep) 
 	{
 		this.dep = dep;
 	}
@@ -107,7 +107,7 @@ public class Employee implements Comparable<Employee> {
 			return 1;
 		}
 	}*/
-		
+		System.out.println("Inside Employee class compareTo method");
 		int id=o.empid;			//this is how compareTo is done without logic
 		Integer i=id;
 		Integer ii =this.empid;

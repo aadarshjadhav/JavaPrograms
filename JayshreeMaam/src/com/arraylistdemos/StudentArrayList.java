@@ -11,6 +11,11 @@ public class StudentArrayList {
 	{
 		ArrayList<Student> list= new ArrayList<>();
 		
+		//The Arrays.asList method in Java is a convenient way 
+		//to convert an array into a fixed-size list. 
+		//It returns a List view of the specified array. 
+		//The resulting list is a backed (backed by the original array) and fixed-size view, 
+		//meaning changes to the list will be reflected in the original array, and vice versa.
 		ArrayList<Integer> L1= new ArrayList<>(Arrays.asList(78,45,90,75,53));
 		list.add(new Student(1,"Pinky",L1));
 		

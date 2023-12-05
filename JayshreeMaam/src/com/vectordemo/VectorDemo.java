@@ -9,7 +9,7 @@ import java.util.Vector;
  * it's underlying data structures is growable
  * default capacity 10
  * it increases it's size by by double capacity
- * vector is thread safe, unlike array(where one thread can access only on access data)
+ * vector is thread safe, unlike array(where one thread can only access data)
  * all methods in vector are synchronized, it gives thread safety
  	3 type of cursor: 1. Iterator-Universal Cursor(iterator method is in collection interface and hence this cursor can be used in all collections)
  * 					  2. ListIterator-only used in list specific classes
@@ -60,10 +60,10 @@ public class VectorDemo {
 		System.out.println("Size:"+v.capacity());
 		System.out.println(v);
 		
-		Enumeration<String> eCursor= v.elements();
+		Enumeration<String> cursor= v3.elements();
 		
-		while(eCursor.hasMoreElements())
-			System.out.println(eCursor.nextElement());
+		while(cursor.hasMoreElements())
+			System.out.println(cursor.nextElement());
 		
 		
 		
