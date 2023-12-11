@@ -3,6 +3,7 @@ package com.hashmapassignments;
 public class PhoneNumber {
 
 	long contact;
+
 	
 
 	public PhoneNumber(long contact) {

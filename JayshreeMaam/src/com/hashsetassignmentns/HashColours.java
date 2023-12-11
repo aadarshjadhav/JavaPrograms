@@ -24,7 +24,7 @@ public class HashColours {
 		list.add("Shudarshan");
 		list.add("Suraj");
 		list.add("Abhishek");
-		
+		list.add("Abhishek");
 		
 		HashSet<String> hashset2= new HashSet<>(list);
 		for(String i:hashset2)

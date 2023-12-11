@@ -12,6 +12,7 @@ public class TreeSetAddAll {
 		treeset.add(4);
 		treeset.add(6);
 		treeset.add(3);
+		treeset.add(3);
 		
 		TreeSet<Integer> treeset1= new TreeSet<>();
 		treeset1.add(8);

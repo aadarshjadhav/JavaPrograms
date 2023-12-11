@@ -1,6 +1,6 @@
 package com.treesetassignments;
 
-public class Employee implements Comparable<Employee>{
+public class Employee{// implements Comparable<Employee>{
 	
 	int empid;
 	String empname;
@@ -32,16 +32,16 @@ public class Employee implements Comparable<Employee>{
 		return "Employee [empid=" + empid + ", empname=" + empname + "]";
 	}
 
-	@Override
-	public int compareTo(Employee o) 
-	{
-		if(this.empid>o.empid)
-			return 1;
-		else if(this.empid<o.empid)
-			return -1;
-		else
-			return 0;
-	}
-	
+//	@Override
+//	public int compareTo(Employee o) 
+//	{
+//		if(this.empid>o.empid)
+//			return 1;
+//		else if(this.empid<o.empid)
+//			return -1;
+//		else
+//			return 0;
+//	}
+//	
 	
 }
