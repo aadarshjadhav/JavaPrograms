@@ -1,4 +1,4 @@
-package com.treemapassignments;
+package com.treesetassignments;
 
 import java.util.Scanner;
 import java.util.TreeSet;
@@ -28,7 +28,8 @@ public class TaskTracker implements Comparable<TaskTracker>{
 	@Override
 	public int compareTo(TaskTracker o) {
 		
-		return 0;
+		return this.task.compareTo(o.task);
+
 	}
 
 	
