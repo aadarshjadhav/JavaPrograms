@@ -1,11 +1,13 @@
 package com.finaltestpractices;
 
-public class Items {
+import java.io.Serializable;
+
+public class Items  implements Serializable{
 	
 	String item_name;
 	int item_id;
 	
-	public Items(String item_name, int item_id) {
+	public Items(int item_id, String item_name) {
 		super();
 		this.item_name = item_name;
 		this.item_id = item_id;
@@ -32,7 +34,23 @@ public class Items {
 		return "Items [item_name=" + item_name + ", item_id=" + item_id + "]";
 	}
 	
+	@Override
+	public int hashCode()
+	{
+		return item_id;
+	}
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		Items d= (Items) obj;
+		if(this.item_id==d.item_id && this.item_name==d.item_name)
+			return true;
+		else
+			return false;
+	}
 	
+  
 	
 
 }
