@@ -8,15 +8,14 @@ public class String2Vowels {
 
 	public static void main(String[] args) {
 		
-		String str="My Country name is India. My Country is the BEST";
+		String str="Canada My Country name is India. My Country is the BEST";
 		String str_array[]=str.split(" ");
 	
 		int m=0;
-		String str_array_vowels[]= new String[]{};
+		String str_array_vowels[]= new String[]{}; //Array without a size
 		
 		int count_vowel=0;
 	
-		
 		for(int i=0;i<str_array.length;i++)   
 		{
 			
@@ -30,11 +29,9 @@ public class String2Vowels {
 				if(ch[k]== 'a' || ch[k]== 'e'|| ch[k]== 'i'|| ch[k]== 'o'|| ch[k]== 'u' || ch[k]== 'A' || ch[k]== 'E'|| ch[k]== 'I'|| ch[k]== 'O'|| ch[k]== 'U')
 				{
 					count_vowel++;
-					if(count_vowel>1)
+					if(count_vowel>1) //If the word contains more than 1 vowel,
 					{
-						//++m;
-						//str_array_vowels[m]=str_array[i];
-						str_array_vowels=addElement(str_array_vowels,str_array[i]);
+						str_array_vowels=addElement(str_array_vowels,str_array[i]);//Passing the word which as two vowels
 						
 						break;
 					}
@@ -49,7 +46,61 @@ public class String2Vowels {
 			
 		}
 		
+		//Counting unique strings so that we can initialize the new array with the that size.
+		int uniquecount=0;
+		for(int i=0;i<str_array_vowels.length;i++)
+		{
+//			System.out.println();
+//			System.out.print("i:"+i);
+//			System.out.println("--str_array_vowels[i]:"+str_array_vowels[i]);
+			boolean isUnique=true;
+			for(int j=0;j<i;j++)
+			{
+				
+//				System.out.print("j:"+j);
+//				System.out.print("--str_array_vowels[j]:"+str_array_vowels[j]);
+				
+				if(str_array_vowels[i].equals(str_array_vowels[j]))
+				{
+					isUnique= false;
+					break;
+				}
+			}
+			if(isUnique==true)
+			{
+				uniquecount++;
+			}
+		}
 		
+		System.out.println("Unique strings:"+uniquecount); //Got the size
+		
+		//Storing unqiue array string elements in a new array
+		String unique_array[]=new String[uniquecount];
+		int index=0;
+		for(int i=0;i<str_array_vowels.length;i++)
+		{
+			boolean isUnique=true;
+			
+			for(int j=0;j<i;j++)
+			{
+				if(str_array_vowels[i].equals(str_array_vowels[j]))
+				{
+					isUnique=false;
+					break;
+				}
+			}
+			
+			if(isUnique==true)
+			{
+				unique_array[index++]= str_array_vowels[i];
+			}
+		}
+		
+		System.out.println("______________________Unique Array__________________");
+		for(int i=0;i<unique_array.length;i++)
+		{
+			System.out.println(unique_array[i]);
+		}
 	}
 	
 	public static String[] addElement(String[] array_temp, String element)
