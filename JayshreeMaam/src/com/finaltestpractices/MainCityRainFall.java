@@ -67,8 +67,8 @@ public class MainCityRainFall {
 	        {
 	            // Add the new record to the set
 	            set.add(obj_cityfall);
-	            System.out.println("Output of obj_cityfall:");
-	            System.out.println(obj_cityfall);
+//	            System.out.println("Output of obj_cityfall:");
+//	            System.out.println(obj_cityfall);
 	        }
 		}
 	}

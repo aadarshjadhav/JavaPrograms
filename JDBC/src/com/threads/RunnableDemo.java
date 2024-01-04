@@ -12,7 +12,6 @@ public class RunnableDemo implements Runnable {
 		Thread t2= new Thread(new RunnableDemo(),"Pong");
 		t2.start();
 		
-		
 	}
 	
 	@Override
