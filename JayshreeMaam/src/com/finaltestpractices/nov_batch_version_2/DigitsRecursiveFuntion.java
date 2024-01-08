@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 
 import java.util.Scanner;
 // Q2. Input any number. Find the sum of the digits of the number using a recursive function.

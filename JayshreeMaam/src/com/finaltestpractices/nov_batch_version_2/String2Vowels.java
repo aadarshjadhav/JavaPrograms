@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 /*Q13. Write a code to accept String from user. Display the words with two vowels in it. In output such word should not be repeated.					            	[1]
 Eg.  If Given String is  : “My Country name is India. My Country is the BEST”.
 Should display output as :   Country , name , India

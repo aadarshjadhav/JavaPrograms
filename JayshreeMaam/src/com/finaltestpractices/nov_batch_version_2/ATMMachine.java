@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 /*
  * Q18. Consider the scenario of ATM center with one machine , 
  * 		where in only one person at a time is allowed to do any transaction like  

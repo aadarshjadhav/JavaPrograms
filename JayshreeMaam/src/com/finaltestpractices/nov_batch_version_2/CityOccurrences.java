@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 /*
  * There is list of cities available which contains object like :
 [“Pune”,”Nasik”,”Dehli”,”Mumbai”,”Nasik”,”Pune”,”Mumbai”,”Mumbai”,”Dehli”]      

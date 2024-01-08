@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 /*
  * Q15. Class Numbers contains int nums[10] . It also contains method addNumber( int num) to 
  * add number in nums[]. This method throws DuplicateValueException if num value is already 

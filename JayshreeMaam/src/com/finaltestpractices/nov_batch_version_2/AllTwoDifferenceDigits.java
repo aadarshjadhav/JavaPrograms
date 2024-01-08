@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 
 //Q4. Write a code to display all two digit numbers which can be formed in such 
 // way that difference between digits in number is 4  or -4.  Eg.15, 26, 37, 48, 59 ,51,62 etc.	

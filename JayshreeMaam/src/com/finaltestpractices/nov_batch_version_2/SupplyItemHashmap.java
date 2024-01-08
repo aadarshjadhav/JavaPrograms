@@ -1,4 +1,4 @@
-package com.finaltestpractices;
+package com.finaltestpractices.nov_batch_version_2;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

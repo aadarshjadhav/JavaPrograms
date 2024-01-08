@@ -1,3 +1,4 @@
+
 package com.jdbchashmapasignmentspart2;
 // Create a HashMap with docid as key and list of patients treated by that
 // doctor as value. Show all entries in HashMap.
