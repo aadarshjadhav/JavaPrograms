@@ -9,10 +9,12 @@ package com.finaltestpractices.nov_batch_version_2;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class OwnerFlatHashMap {
 	
@@ -21,6 +23,8 @@ public class OwnerFlatHashMap {
 	ResultSet rs_flats, rs_owners;
 	
 	HashMap<String,ArrayList<Flats>> hashmap= new HashMap<>();
+	
+	TreeSet<OwnerFlatHashMap> treeset;
 	
 	public static Connection getMySQLConnection() throws ClassNotFoundException, SQLException
 	{
@@ -78,6 +82,24 @@ public class OwnerFlatHashMap {
 		}
 	}
 	
+	public void sortHashMap()
+	{
+		
+		System.out.println("__________Inside SortHashMapp()____________");
+		TreeSet<Entry<String, ArrayList<Flats>>> treeset= new TreeSet<>(Comparator.comparing(Entry::getKey));
+		treeset.addAll(hashmap.entrySet());
+		
+		Iterator<Entry<String, ArrayList<Flats>>> itr_treeset=treeset.iterator();
+		while(itr_treeset.hasNext())
+		{
+			Entry<String, ArrayList<Flats>> entry_treeset=itr_treeset.next();
+			String owner_name_str=entry_treeset.getKey();
+			ArrayList<Flats> list_flats=entry_treeset.getValue();
+			
+			System.out.println("Owner Name:"+owner_name_str+"-- Flat List"+ list_flats.toString());
+		}
+	}
+	
 	public void showHashMap()
 	{
 		System.out.println("__________________Inside ShowMap___________________");
@@ -101,6 +123,7 @@ public class OwnerFlatHashMap {
 		obj.getResultSet();
 		obj.createHashMap();
 		obj.showHashMap();
+		obj.sortHashMap();
 	}
 
 }
