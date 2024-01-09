@@ -21,8 +21,9 @@ public class Call_Stored_Procedure_For_Patient_Details {
 	{
         Connection con=null;
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver"); // This is used to register driver manager.
 		
+		//the driver manager uses the loaded driver to establish a connection to a database
 		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hospitaldb2","root","root");
 		
 		return con;

@@ -28,16 +28,22 @@ public class OwnerFlatHashMap {
 	
 	public static Connection getMySQLConnection() throws ClassNotFoundException, SQLException
 	{
+		// Both ClassNotFoundException and SQLException are checked exception and need to 
+		// be handled. Class. throws:ClassNotFoundException 
+		// and getConnection() throws: SQLException;
 		Connection con=null;
 		Class.forName("com.mysql.jdbc.Driver");
+		//// This is used to register driver manager.
+
 		
+		//the driver manager uses the loaded driver to establish a connection to a database
 		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/estatesdb","root","root");
 		
 		return con;
 		
 	}
 	
-	public void getResultSet() throws ClassNotFoundException, SQLException
+	public OwnerFlatHashMap() throws ClassNotFoundException, SQLException
 	{
 		con=getMySQLConnection();
 		st_flatdetails=con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
@@ -120,7 +126,7 @@ public class OwnerFlatHashMap {
 	public static void main(String args[]) throws SQLException, ClassNotFoundException
 	{
 		OwnerFlatHashMap obj = new OwnerFlatHashMap();
-		obj.getResultSet();
+		
 		obj.createHashMap();
 		obj.showHashMap();
 		obj.sortHashMap();

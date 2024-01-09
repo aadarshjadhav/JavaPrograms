@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class Call_Stored_Procedure_Patient_ID {
 	
 	Connection con;
-	Statement st;
+	
 	ResultSet rs;
 	
 	public static Connection getMySQLConnection() throws ClassNotFoundException, SQLException
@@ -50,7 +50,7 @@ public class Call_Stored_Procedure_Patient_ID {
 		
 		System.out.println(cs.execute());
 		System.out.println("Customer name:"+cs.getString(2));
-		System.out.println("Customer Age:"+cs.getString(3));
+		System.out.println("Customer Age:"+cs.getInt(3));
 	}
 	
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
